@@ -17,12 +17,12 @@ pip install git+https://github.com/MnogoByte/celery-redundant-scheduler.git
 # Usage
 1. Setup scheduler synchronization backend:
 
-    CELERYBEAT_REDUNDANT_BACKEND_OPTIONS = {
-        'HOST': 'localhost',
-        'PORT': 6379,
-        'DB': 0,
-        'PASSWORD': 'secret'
-    }
+        CELERYBEAT_REDUNDANT_BACKEND_OPTIONS = {
+            'HOST': 'localhost',
+            'PORT': 6379,
+            'DB': 0,
+            'PASSWORD': 'secret'
+        }
       
 2. Provide `--scheduler=celery_redundant_scheduler:RedundantScheduler` option running your `worker` or `beat` instance.
 
