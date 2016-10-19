@@ -4,7 +4,7 @@
 
 
 # Problem
-Production level deployment requires redundancy and fault-tolerance environment. Unfortunately [Celery](http://celeryproject.org) doesn't provide periodic tasks scheduling redundancy out of the box. Running multiple `celerybeat` instances results multiple scheduled tasks queuing. This package provides synchronized scheduler class. By default `redis` backend used, but developers are free too use their own based on package primitives.
+Production level deployment requires redundancy and fault-tolerance environment. Unfortunately [Celery](http://celeryproject.org) doesn't provide periodic tasks scheduling redundancy out of the box. Running multiple `celerybeat` instances results multiple scheduled tasks queuing. This package provides synchronized scheduler class with fail-over support. By default `redis` backend used, but developers are free too use their own based on package primitives.
 
 
 # Installation
